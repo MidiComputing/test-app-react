@@ -6,9 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is my first test from Netlify.
-        </p>
+        
+        <p>Successfully Deployed <code>A React application</code> to Netlify with CircleCI</p>
+
         <a
           className="App-link"
           href="https://reactjs.org"
