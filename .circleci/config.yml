@@ -30,12 +30,10 @@ jobs:
           command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=build
 workflows:
   version: 2
-  untagged-build:
-    jobs:
-      - build
-  tagged-build:
+  build-deploy:
     jobs:
       - build:
           filters:
-            tags:
-              only: /^v.*/
+            branches:
+              only:
+                - main
