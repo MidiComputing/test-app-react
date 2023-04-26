@@ -7,7 +7,6 @@ import Create from "./Create";
 import Edit from "./Edit";
 import Search from "./Search";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 const Navbar = () => {
   return (
     <div>
