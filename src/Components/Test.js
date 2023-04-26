@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 // Import Bootstrap and its default variables
@@ -6,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 class Welcome extends Component{
     render(){
         return( 
-        <div>
+        <div> 
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
