@@ -35,7 +35,7 @@ const Search = () => {
                         return post;
                     }
                 }).map((post, index) => (
-                    <div className="box" key={index}>
+                    <div className="box" key={index} style={{border: "1px solid #ccc"}}>
                         <p>{post.title}</p>
                         <p>{post.userID}</p>
                         <p>{post.body}</p>

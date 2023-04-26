@@ -1,11 +1,11 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import Posts from "./Posts";
-import About from "./About";
-import PostInfo from "./PostInfo";
-import Create from "./Create";
-import Edit from "./Edit";
-import Search from "./Search";
+import Home from "../Home";
+import Posts from "../Post/Posts";
+import About from "../About";
+import PostInfo from "../Post/PostInfo";
+import Create from "../Post/Create";
+import Edit from "../Post/Edit";
+import Search from "../Post/Search";
 
 const Navbar = () => {
   return (
