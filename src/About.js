@@ -8,12 +8,6 @@ const About = () => {
     const [age, setAge] = useState(22); 
     const [myarray, setMyarray] = useState(["a", "b", "c"]); 
 
-    const [data, setData] = useState({
-        "adress": "Ecole Lala",
-        "phone": "11224466",
-        "postal": "2121",
-    });
-    
     const changeName = () => {
         setFirstname('Ahmed');
         setSecondname('Salhi');

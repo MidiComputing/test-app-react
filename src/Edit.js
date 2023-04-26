@@ -30,8 +30,7 @@ const Edit = () => {
                 console.log(e.message);
             });
         }, 500);
-      
-    },[]);
+    });
 
     const submitButton = (e) => {
         e.preventDefault();

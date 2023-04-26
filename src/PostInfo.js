@@ -18,8 +18,6 @@ const PostInfo = () => {
                     <h5 className="card-title">{posts.id}</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">{posts.title}</h6>
                     <p className="card-text">{posts.body}</p>
-                    <a href="#" className="card-link">Delete</a>
-                    <a href="#" className="card-link">Update</a>
                 </div>
             </div>}
         </div>

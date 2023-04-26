@@ -1,10 +1,10 @@
 import './App.css';
+/* import Welcome from './Components/Welcome'; 
 import {Greet} from './Components/Greet';
-/* import Welcome from './Components/Welcome'; */
 import Home from './Home';
-import Navbar from './Navbar';
 import About from './About';
-import Posts from './Posts';
+import Posts from './Posts';*/
+import Navbar from './Navbar';
 
 function App() {
   return (
