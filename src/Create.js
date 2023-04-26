@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Spinner from 'react-bootstrap/Spinner';
 
 const Create = () => {
 
@@ -36,7 +37,6 @@ const Create = () => {
                 navigator('/posts');
             });
         }, 2000);
-
     }
 
     return (
@@ -83,7 +83,16 @@ const Create = () => {
                 </div>
                 <div className="col-auto">
                     {!  waitingServer && <button type="submit" onClick={() => submitButton} className="btn btn-success mb-3">Create</button>}
-                    {waitingServer && <button type="button" className="btn btn-outline-secondary" disabled>Please wait..</button>}
+                    {waitingServer && <button type="button" className="btn btn-outline-secondary"  disabled>
+                    <Spinner
+                        as="span"
+                        animation="grow"
+                        size="sm"
+                        role="status"
+                        aria-hidden="true"
+                        />
+                        Loading...
+                    </button>}
                 </div>
             </form>
         </div>

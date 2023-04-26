@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Spinner from 'react-bootstrap/Spinner';
 
 const Edit = () => {
 
@@ -66,8 +67,10 @@ const Edit = () => {
     return (
         <div className="container">
             <form onSubmit={submitButton}>
-            {isWaiting && <h1>Please wait to load Data...</h1>}
-                <h1>Update Post</h1>
+            <h1>Update Post</h1>
+            {isWaiting && <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>}
                 <div className="mb-3">
                     <label htmlFor="exampleFormControlInput0" className="form-label">
                         User ID

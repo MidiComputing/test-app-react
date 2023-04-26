@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import PostsModel from "./PostsModel";
+import Spinner from 'react-bootstrap/Spinner';
 
 const PostInfo = () => {
 
@@ -10,7 +11,9 @@ const PostInfo = () => {
     return(
         <div className="container">
             <h1>PostInfo - N°{id}</h1>
-            {isWaiting && <h2>Wating Data...</h2>}
+            {isWaiting && <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>}
             {serverError && <h2>Error on server!...</h2>}
             {posts && <div className="card">
                 <div className="card-body">

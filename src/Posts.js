@@ -1,5 +1,6 @@
 import PostsList from "./PostsList";
 import PostsModel from "./PostsModel";
+import Spinner from 'react-bootstrap/Spinner';
 
 const Posts = () => {
     
@@ -47,7 +48,10 @@ const Posts = () => {
             {/* <button type="button" onClick={() => setCheckAuth('true')} className="btn btn-info">Info</button>
             <h4>Status: {checkAuth} </h4> */}
             {serverError && <h1>{serverError}...</h1>}
-            {isWaiting && <h1>Please wait to load Data...</h1>}
+            {isWaiting && <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>}
+            {/*{isWaiting && <h1>Please wait to load Data...</h1>}*/}
             {posts && <PostsList postsProps={posts} titlePage="List of posts"/>}
             {/*{posts && <PostsList postsProps={posts} titlePage="List of posts" deletAction={deletAction} />}*/}
         </div>
